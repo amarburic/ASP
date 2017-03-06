@@ -1,0 +1,9 @@
+/rhome/a/aburic1/workspace/ASP/PZ10/Z1/main.cpp: In member function ‘bool MatricaGraf<T>::postojiGrana(int, int) const’:
+/rhome/a/aburic1/workspace/ASP/PZ10/Z1/main.cpp:221:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+  return m[i][j] != INF;
+                    ^
+/rhome/a/aburic1/workspace/ASP/PZ10/Z1/main.cpp: In instantiation of ‘bool MatricaGraf<T>::postojiGrana(int, int) const [with T = bool]’:
+/rhome/a/aburic1/workspace/ASP/PZ10/Z1/main.cpp:325:1:   required from here
+/rhome/a/aburic1/workspace/ASP/PZ10/Z1/main.cpp:221:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+  return m[i][j] != INF;
+                 ^

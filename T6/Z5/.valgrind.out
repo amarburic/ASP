@@ -1,0 +1,15 @@
+==8716== Memcheck, a memory error detector
+==8716== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==8716== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==8716== Command: /rhome/a/aburic1/workspace/ASP/T6/Z5/.runme
+==8716== Parent PID: 8651
+==8716== 
+==8716== 
+==8716== HEAP SUMMARY:
+==8716==     in use at exit: 0 bytes in 0 blocks
+==8716==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==8716== 
+==8716== All heap blocks were freed -- no leaks are possible
+==8716== 
+==8716== For counts of detected and suppressed errors, rerun with: -v
+==8716== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

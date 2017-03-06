@@ -1,0 +1,202 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-431.29.2.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In instantiation of ‘Cvor<K, V>* AVLStabloMapa<K, V>::Trazi(const K&, Cvor<K, V>*) const [with K = float; V = float]’:\nmain.cpp:334:21:   required from ‘V& AVLStabloMapa<K, V>::operator[](const K&) [with K = float; V = float]’\nmain.cpp:376:4:   required from here\nmain.cpp:93:37: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n  if (cvor == nullptr || cvor->kljuc == kljuc)\n                         ~~~~~~~~~~~~^~~~~~~~\nmain.cpp: In instantiation of ‘void AVLStabloMapa<K, V>::LijevaRotacija(Cvor<K, V>*) [with K = float; V = float]’:\nmain.cpp:227:18:   required from ‘void AVLStabloMapa<K, V>::AzurirajBalans(Cvor<K, V>*, bool, bool) [with K = float; V = float]’\nmain.cpp:113:20:   required from ‘void AVLStabloMapa<K, V>::Umetni(const K&, const V&, Cvor<K, V>*&, Cvor<K, V>*) [with K = float; V = float]’\nmain.cpp:337:8:   required from ‘V& AVLStabloMapa<K, V>::operator[](const K&) [with K = float; V = float]’\nmain.cpp:376:4:   required from here\nmain.cpp:284:62: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   if(cvor->roditelj->lijevo && cvor->roditelj->lijevo->kljuc == cvor->kljuc)\n                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\nmain.cpp: In instantiation of ‘void AVLStabloMapa<K, V>::DesnaRotacija(Cvor<K, V>*) [with K = float; V = float]’:\nmain.cpp:229:17:   required from ‘void AVLStabloMapa<K, V>::AzurirajBalans(Cvor<K, V>*, bool, bool) [with K = float; V = float]’\nmain.cpp:113:20:   required from ‘void AVLStabloMapa<K, V>::Umetni(const K&, const V&, Cvor<K, V>*&, Cvor<K, V>*) [with K = float; V = float]’\nmain.cpp:337:8:   required from ‘V& AVLStabloMapa<K, V>::operator[](const K&) [with K = float; V = float]’\nmain.cpp:376:4:   required from here\nmain.cpp:259:62: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   if(cvor->roditelj->lijevo && cvor->roditelj->lijevo->kljuc == cvor->kljuc)\n                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "93",
+                "col": "37",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_5556/main.cpp:93:37: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]  if (cvor == nullptr || cvor->kljuc == kljuc)                         ~~~~~~~~~~~~^~~~~~~~/tmp/buildservice/bs_5556/main.cpp: In instantiation of ‘void AVLStabloMapa<K, V>::LijevaRotacija(Cvor<K, V>*) [with K = float; V = float]’:/tmp/buildservice/bs_5556/main.cpp:227:18:   required from ‘void AVLStabloMapa<K, V>::AzurirajBalans(Cvor<K, V>*, bool, bool) [with K = float; V = float]’/tmp/buildservice/bs_5556/main.cpp:113:20:   required from ‘void AVLStabloMapa<K, V>::Umetni(const K&, const V&, Cvor<K, V>*&, Cvor<K, V>*) [with K = float; V = float]’/tmp/buildservice/bs_5556/main.cpp:337:8:   required from ‘V& AVLStabloMapa<K, V>::operator[](const K&) [with K = float; V = float]’/tmp/buildservice/bs_5556/main.cpp:376:4:   required from here",
+                "code": "if (cvor == nullptr || cvor->kljuc == kljuc)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "284",
+                "col": "62",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_5556/main.cpp:284:62: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   if(cvor->roditelj->lijevo && cvor->roditelj->lijevo->kljuc == cvor->kljuc)                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~/tmp/buildservice/bs_5556/main.cpp: In instantiation of ‘void AVLStabloMapa<K, V>::DesnaRotacija(Cvor<K, V>*) [with K = float; V = float]’:/tmp/buildservice/bs_5556/main.cpp:229:17:   required from ‘void AVLStabloMapa<K, V>::AzurirajBalans(Cvor<K, V>*, bool, bool) [with K = float; V = float]’/tmp/buildservice/bs_5556/main.cpp:113:20:   required from ‘void AVLStabloMapa<K, V>::Umetni(const K&, const V&, Cvor<K, V>*&, Cvor<K, V>*) [with K = float; V = float]’/tmp/buildservice/bs_5556/main.cpp:337:8:   required from ‘V& AVLStabloMapa<K, V>::operator[](const K&) [with K = float; V = float]’/tmp/buildservice/bs_5556/main.cpp:376:4:   required from here",
+                "code": "if(cvor->roditelj->lijevo && cvor->roditelj->lijevo->kljuc == cvor->kljuc)"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "259",
+                "col": "62",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_5556/main.cpp:259:62: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   if(cvor->roditelj->lijevo && cvor->roditelj->lijevo->kljuc == cvor->kljuc)                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~",
+                "code": "if(cvor->roditelj->lijevo && cvor->roditelj->lijevo->kljuc == cvor->kljuc)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1771": {
+            "status": 1,
+            "run_result": {
+                "output": "2 Hrvatska '' '' 3 '' 0 '' ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1772": {
+            "status": 1,
+            "run_result": {
+                "output": "2 2 2 BiH 2 BiH 1 '' 0 ''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1773": {
+            "status": 1,
+            "run_result": {
+                "output": "3 Sarajevo Tuzla 4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1774": {
+            "status": 1,
+            "run_result": {
+                "output": "2 300 0 2 400 3",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1775": {
+            "status": 1,
+            "run_result": {
+                "output": "200 2 1 0 0 0 300",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1776": {
+            "status": 1,
+            "run_result": {
+                "output": "4.5 7 0 5 8 0 2 1.5 1 0.5 0 8 1.5 3 0 8 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1777": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_5556/core.17565"
+            },
+            "debug_result": {
+                "output": "[New LWP 17565]\nCore was generated by `bs_test_1777'.\nProgram terminated with signal SIGSEGV, Segmentation fault.\n#0  0x0000000000402ce4 in AVLStabloMapa<int, int>::LijevaRotacija (this=0x7fff7181dcc0, cvor=0xe880a0) at bs_test_1777.cpp:298\n298\t\t(*pcvor)->roditelj = cvor->roditelj;\nTo enable execution of this file add\n\tadd-auto-load-safe-path /opt/gcc-6.2.0/lib64/libstdc++.so.6.0.22-gdb.py\nline to your configuration file \"$HOME/.gdbinit\".\nTo completely disable this security protection add\n\tset auto-load safe-path /\nline to your configuration file \"$HOME/.gdbinit\".\nFor more information about this security protection see the\n\"Auto-loading safe path\" section in the GDB manual.  E.g., run from the shell:\n\tinfo \"(gdb)Auto-loading safe path\"\n#0  0x0000000000402ce4 in AVLStabloMapa<int, int>::LijevaRotacija (this=0x7fff7181dcc0, cvor=0xe880a0) at bs_test_1777.cpp:298\n#1  0x0000000000402908 in AVLStabloMapa<int, int>::AzurirajBalans (this=0x7fff7181dcc0, cvor=0xe6d670, lijevo=true, brisanje=false) at bs_test_1777.cpp:242\n#2  0x0000000000402223 in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe6d688: 0x0, roditelj=0xe6d670) at bs_test_1777.cpp:119\n#3  0x00000000004022dc in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe77f78: 0xe6d670, roditelj=0xe77f60) at bs_test_1777.cpp:137\n#4  0x00000000004022dc in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe742c0: 0xe77f60, roditelj=0xe742a0) at bs_test_1777.cpp:137\n#5  0x000000000040229e in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe7ba30: 0xe742a0, roditelj=0xe7ba10) at bs_test_1777.cpp:131\n#6  0x000000000040229e in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe75db8: 0xe7ba10, roditelj=0xe75da0) at bs_test_1777.cpp:131\n#7  0x00000000004022dc in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe70748: 0xe75da0, roditelj=0xe70730) at bs_test_1777.cpp:137\n#8  0x00000000004022dc in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe6fc40: 0xe70730, roditelj=0xe6fc20) at bs_test_1777.cpp:137\n#9  0x000000000040229e in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe6ce20: 0xe6fc20, roditelj=0xe6ce00) at bs_test_1777.cpp:131\n#10 0x000000000040229e in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe6fa00: 0xe6ce00, roditelj=0xe6f9e0) at bs_test_1777.cpp:131\n#11 0x000000000040229e in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe6d180: 0xe6f9e0, roditelj=0xe6d160) at bs_test_1777.cpp:131\n#12 0x000000000040229e in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe6d2a0: 0xe6d160, roditelj=0xe6d280) at bs_test_1777.cpp:131\n#13 0x000000000040229e in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe6d330: 0xe6d280, roditelj=0xe6d310) at bs_test_1777.cpp:131\n#14 0x000000000040229e in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0xe75ab8: 0xe6d310, roditelj=0xe75aa0) at bs_test_1777.cpp:131\n#15 0x00000000004022dc in AVLStabloMapa<int, int>::Umetni (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698, vrijednost=@0x7fff7181dc94: 0, cvor=@0x7fff7181dcc8: 0xe75aa0, roditelj=0x0) at bs_test_1777.cpp:137\n#16 0x00000000004019cd in AVLStabloMapa<int, int>::operator[] (this=0x7fff7181dcc0, kljuc=@0x7fff7181dce4: -758698) at bs_test_1777.cpp:343\n#17 0x00000000004015d5 in main () at bs_test_1777.cpp:431",
+                "parsed_output": [
+                    {
+                        "file": "main.cpp",
+                        "line": 292
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==17585== Memcheck, a memory error detector\n==17585== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==17585== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==17585== Command: bs_test_1777\n==17585== Parent PID: 17584\n==17585== \n==17585== Invalid write of size 8\n==17585==    at 0x402CE4: AVLStabloMapa<int, int>::LijevaRotacija(Cvor<int, int>*) (bs_test_1777.cpp:298)\n==17585==    by 0x402907: AVLStabloMapa<int, int>::AzurirajBalans(Cvor<int, int>*, bool, bool) (bs_test_1777.cpp:242)\n==17585==    by 0x402222: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:119)\n==17585==    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n==17585==    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n==17585==    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==  Address 0x10 is not stack'd, malloc'd or (recently) free'd\n==17585== \n==17585== \n==17585== Process terminating with default action of signal 11 (SIGSEGV)\n==17585==  Access not within mapped region at address 0x10\n==17585==    at 0x402CE4: AVLStabloMapa<int, int>::LijevaRotacija(Cvor<int, int>*) (bs_test_1777.cpp:298)\n==17585==    by 0x402907: AVLStabloMapa<int, int>::AzurirajBalans(Cvor<int, int>*, bool, bool) (bs_test_1777.cpp:242)\n==17585==    by 0x402222: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:119)\n==17585==    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n==17585==    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n==17585==    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n==17585==  If you believe this happened as a result of a stack\n==17585==  overflow in your program's main thread (unlikely but\n==17585==  possible), you can try to increase the size of the\n==17585==  main thread stack using the --main-stacksize= flag.\n==17585==  The main thread stack size used in this run was 10485760.\n==17585== \n==17585== HEAP SUMMARY:\n==17585==     in use at exit: 93,160 bytes in 2,329 blocks\n==17585==   total heap usage: 2,330 allocs, 1 frees, 165,864 bytes allocated\n==17585== \n==17585== LEAK SUMMARY:\n==17585==    definitely lost: 0 bytes in 0 blocks\n==17585==    indirectly lost: 0 bytes in 0 blocks\n==17585==      possibly lost: 0 bytes in 0 blocks\n==17585==    still reachable: 93,160 bytes in 2,329 blocks\n==17585==         suppressed: 0 bytes in 0 blocks\n==17585== Reachable blocks (those to which a pointer was found) are not shown.\n==17585== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==17585== \n==17585== For counts of detected and suppressed errors, rerun with: -v\n==17585== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 4 from 4)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid write of size 8\n    at 0x402CE4: AVLStabloMapa<int, int>::LijevaRotacija(Cvor<int, int>*) (bs_test_1777.cpp:298)\n    by 0x402907: AVLStabloMapa<int, int>::AzurirajBalans(Cvor<int, int>*, bool, bool) (bs_test_1777.cpp:242)\n    by 0x402222: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:119)\n    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n    by 0x4022DB: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:137)\n    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n    by 0x40229D: AVLStabloMapa<int, int>::Umetni(int const&, int const&, Cvor<int, int>*&, Cvor<int, int>*) (bs_test_1777.cpp:131)\n  Address 0x10 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.cpp",
+                        "line": 292
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1778": {
+            "status": 5,
+            "run_result": {
+                "output": "Dodano 1000\nDodano 2000\nDodano 4000\nDodano 8000\nDodano 16000\nDodano 32000\nDodano 64000\nDodano 128000\nDodano 256000\n",
+                "duration": 2,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_5556/core.17603"
+            },
+            "debug_result": {
+                "output": "[New LWP 17603]\nCore was generated by `bs_test_1778'.\nProgram terminated with signal SIGSEGV, Segmentation fault.\n#0  0x00000000004029a7 in AVLStabloMapa<int, int>::AzurirajBalans (this=0x7fff04dda550, cvor=0x51962e0, lijevo=false, brisanje=true) at bs_test_1778.cpp:239\n239\t\t\tif(cvor->lijevo->balans == 1) {\nTo enable execution of this file add\n\tadd-auto-load-safe-path /opt/gcc-6.2.0/lib64/libstdc++.so.6.0.22-gdb.py\nline to your configuration file \"$HOME/.gdbinit\".\nTo completely disable this security protection add\n\tset auto-load safe-path /\nline to your configuration file \"$HOME/.gdbinit\".\nFor more information about this security protection see the\n\"Auto-loading safe path\" section in the GDB manual.  E.g., run from the shell:\n\tinfo \"(gdb)Auto-loading safe path\"\n#0  0x00000000004029a7 in AVLStabloMapa<int, int>::AzurirajBalans (this=0x7fff04dda550, cvor=0x51962e0, lijevo=false, brisanje=true) at bs_test_1778.cpp:239\n#1  0x0000000000402648 in AVLStabloMapa<int, int>::BrisiCvor (this=0x7fff04dda550, kljuc=@0x7fff04dda540: -499974, cvor=@0x7fff04dda558: 0x3ab3220) at bs_test_1778.cpp:199\n#2  0x0000000000401aef in AVLStabloMapa<int, int>::obrisi (this=0x7fff04dda550, kljuc=@0x7fff04dda540: -499974) at bs_test_1778.cpp:71\n#3  0x0000000000401755 in main () at bs_test_1778.cpp:445",
+                "parsed_output": [
+                    {
+                        "file": "main.cpp",
+                        "line": 233
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==17613== Memcheck, a memory error detector\n==17613== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==17613== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==17613== Command: bs_test_1778\n==17613== Parent PID: 17612\n==17613== \n==17613== Invalid read of size 4\n==17613==    at 0x4029A7: AVLStabloMapa<int, int>::AzurirajBalans(Cvor<int, int>*, bool, bool) (bs_test_1778.cpp:239)\n==17613==    by 0x402647: AVLStabloMapa<int, int>::BrisiCvor(int const&, Cvor<int, int>*&) (bs_test_1778.cpp:199)\n==17613==    by 0x401AEE: AVLStabloMapa<int, int>::obrisi(int const&) (bs_test_1778.cpp:71)\n==17613==    by 0x401754: main (bs_test_1778.cpp:445)\n==17613==  Address 0x8 is not stack'd, malloc'd or (recently) free'd\n==17613== \n==17613== \n==17613== Process terminating with default action of signal 11 (SIGSEGV)\n==17613==  Access not within mapped region at address 0x8\n==17613==    at 0x4029A7: AVLStabloMapa<int, int>::AzurirajBalans(Cvor<int, int>*, bool, bool) (bs_test_1778.cpp:239)\n==17613==    by 0x402647: AVLStabloMapa<int, int>::BrisiCvor(int const&, Cvor<int, int>*&) (bs_test_1778.cpp:199)\n==17613==    by 0x401AEE: AVLStabloMapa<int, int>::obrisi(int const&) (bs_test_1778.cpp:71)\n==17613==    by 0x401754: main (bs_test_1778.cpp:445)\n==17613==  If you believe this happened as a result of a stack\n==17613==  overflow in your program's main thread (unlikely but\n==17613==  possible), you can try to increase the size of the\n==17613==  main thread stack using the --main-stacksize= flag.\n==17613==  The main thread stack size used in this run was 10485760.\n==17613== \n==17613== HEAP SUMMARY:\n==17613==     in use at exit: 39,998,920 bytes in 999,973 blocks\n==17613==   total heap usage: 1,000,001 allocs, 28 frees, 40,072,704 bytes allocated\n==17613== \n==17613== LEAK SUMMARY:\n==17613==    definitely lost: 0 bytes in 0 blocks\n==17613==    indirectly lost: 0 bytes in 0 blocks\n==17613==      possibly lost: 0 bytes in 0 blocks\n==17613==    still reachable: 39,998,920 bytes in 999,973 blocks\n==17613==         suppressed: 0 bytes in 0 blocks\n==17613== Reachable blocks (those to which a pointer was found) are not shown.\n==17613== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==17613== \n==17613== For counts of detected and suppressed errors, rerun with: -v\n==17613== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 4 from 4)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 4\n    at 0x4029A7: AVLStabloMapa<int, int>::AzurirajBalans(Cvor<int, int>*, bool, bool) (bs_test_1778.cpp:239)\n    by 0x402647: AVLStabloMapa<int, int>::BrisiCvor(int const&, Cvor<int, int>*&) (bs_test_1778.cpp:199)\n    by 0x401AEE: AVLStabloMapa<int, int>::obrisi(int const&) (bs_test_1778.cpp:71)\n    by 0x401754: main (bs_test_1778.cpp:445)\n  Address 0x8 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.cpp",
+                        "line": 233
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1484434171
+}
